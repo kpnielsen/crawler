@@ -58,7 +58,7 @@ parameters:
 			path: Classes/Backend/RequestForm/LogRequestForm.php
 
 		-
-			message: "#^Cannot call method fetch\\(\\) on Doctrine\\\\DBAL\\\\ForwardCompatibility\\\\DriverStatement\\|int\\.$#"
+			message: "#^Cannot call method fetch\\(\\) on Doctrine\\\\DBAL\\\\Driver\\\\ResultStatement\\|int\\.$#"
 			count: 1
 			path: Classes/Backend/RequestForm/LogRequestForm.php
 
@@ -89,11 +89,6 @@ parameters:
 
 		-
 			message: "#^Parameter \\#2 \\$row of method TYPO3\\\\CMS\\\\Core\\\\Imaging\\\\IconFactory\\:\\:getIconForRecord\\(\\) expects array, array\\|false given\\.$#"
-			count: 1
-			path: Classes/Backend/RequestForm/LogRequestForm.php
-
-		-
-			message: "#^Property AOE\\\\Crawler\\\\Backend\\\\RequestForm\\\\LogRequestForm\\:\\:\\$queryBuilder \\(Doctrine\\\\DBAL\\\\Query\\\\QueryBuilder\\) does not accept TYPO3\\\\CMS\\\\Core\\\\Database\\\\Query\\\\QueryBuilder\\.$#"
 			count: 1
 			path: Classes/Backend/RequestForm/LogRequestForm.php
 

@@ -36,23 +36,15 @@ use TYPO3\CMS\Frontend\Controller\ErrorController;
  */
 class FrontendUserAuthenticator implements MiddlewareInterface
 {
-    /**
-     * @var string
-     */
-    protected $headerName = 'X-T3CRAWLER';
+    protected string $headerName = 'X-T3CRAWLER';
+    protected Context $context;
 
     /**
-     * @var Context
-     */
-    protected $context;
-
-    /**
-     * @var QueueRepository
      * This is not used by the Crawler.
      * This is only kept, to not have a breaking change in this bugfix release.
      * Will be removed in v12.0
      */
-    protected $queueRepository;
+    protected QueueRepository $queueRepository;
 
     public function __construct(?Context $context = null)
     {
