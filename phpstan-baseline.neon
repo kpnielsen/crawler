@@ -113,6 +113,11 @@ parameters:
 			path: Classes/Backend/RequestForm/StartRequestForm.php
 
 		-
+			message: "#^Cannot call method getConfigurationsForBranch\\(\\) on AOE\\\\Crawler\\\\Controller\\\\CrawlerController\\|null\\.$#"
+			count: 1
+			path: Classes/Backend/RequestForm/StartRequestForm.php
+
+		-
 			message: "#^Method AOE\\\\Crawler\\\\Backend\\\\RequestForm\\\\StartRequestForm\\:\\:render\\(\\) has parameter \\$id with no typehint specified\\.$#"
 			count: 1
 			path: Classes/Backend/RequestForm/StartRequestForm.php
